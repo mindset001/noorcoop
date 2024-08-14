@@ -9,9 +9,15 @@ function Landing() {
   return (
     <div className=''>
         <Hero/>
-        <About/>
-        <TestimonialSection/>
+       <div id='about'>
+       <About/>
+       </div>
+       <div>
+       <TestimonialSection/>
+       </div>
+        <div id='lending'>
         <LendingFinanceSection/>
+        </div>
        
         <Questions/>
       

@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Logo from '../../../public/images/logo.png'
 import { Raleway, Inter } from 'next/font/google';
-import { Link } from 'react-scroll';
+import Link from 'next/link'; // Import Link from next/link for external link
+import { Link as ScrollLink } from 'react-scroll'; 
 
 const rale = Raleway({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -29,37 +30,37 @@ function Navbar() {
 
           <div className='flex items-center gap-16'>
           <div>
-          <Link 
+          <ScrollLink 
                     to='/'
                     smooth={true}
                     duration={500}
                     className='cursor-pointer'
                   >
                     <Image src={Logo} alt='' className='w-[143px] h-[50.86px]' />
-                  </Link>
+                  </ScrollLink>
             
           </div>
           <div className='hidden lg:block'>
             <ul className='flex flex-row gap-3 text-[#000] text-[16px] font-[700]'>
               {Navcontent.map((item, i: number) => (
                 <li className={inter.className} key={i}>
-                  <Link 
+                  <ScrollLink 
                     to={item.link}
                     smooth={true}
                     duration={500}
                     className='cursor-pointer'
                   >
                     {item.name}
-                  </Link>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
           </div>
           </div>
-
+          
               <div className='flex gap-6'>
-                <button>Log in</button>
-                <button className='bg-[#4F269F] text-[#fff] p-2 rounded-[8px]'>Apply now</button>
+                <button><Link href='https://member.noorcoop.com/'>Log in</Link></button>
+                <button className='bg-[#4F269F] text-[#fff] p-2 rounded-[8px]'><Link href='https://member.noorcoop.com/'>Apply now</Link></button>
               </div>
 
         
@@ -80,7 +81,7 @@ const Navcontent = [
     name: 'About NoorCoop'
   },
   {
-    link: 'competencies',
+    link: 'lending',
     name: 'Our Services'
   },
 //   {

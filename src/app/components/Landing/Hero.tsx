@@ -2,6 +2,7 @@ import React from 'react'
 import Man from '../../../../public/images/man.png'
 import Image from 'next/image'
 import { ArrowRightOutlined } from '@ant-design/icons'
+import Link from 'next/link'
 
 function Hero() {
   return (
@@ -19,7 +20,7 @@ function Hero() {
 
                 <div className='flex mt-10 gap-4'>
                     <button className='border border-[#D0D5DD] rounded-[8px] py-2 w-[242px] h-[60px]'>Talk to a specialist</button>
-                    <button className='bg-[#4F269F] text-[#fff] py-2 w-[242px] rounded-[8px] h-[60px]'>Apply now</button>
+                    <button className='bg-[#4F269F] text-[#fff] py-2 w-[242px] rounded-[8px] h-[60px]'><Link href='https://member.noorcoop.com/'>Apply now</Link></button>
                 </div>
             </div>
             <div className='w-[45%]'>
