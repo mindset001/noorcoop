@@ -1,15 +1,16 @@
 import React from 'react'
 import Man from '../../../../public/images/man.png'
 import Image from 'next/image'
+import { ArrowRightOutlined } from '@ant-design/icons'
 
 function Hero() {
   return (
     <main className='flex justify-center'>
         <div className='flex justify-between mt-4 w-[80%] items-center'>
             <div className='w-[45%]'>
-                <div className='bg-[#F4EEFE] rounded-[20px] flex w-[60%] p-[5px] gap-2 items-center '>
+                <div className='bg-[#F4EEFE] rounded-[20px] flex w-[65%] p-[5px] gap-2 items-center '>
                     <p className='bg-[white] rounded-[16px] p-[5px]'>We’re hiring!</p>
-                    <p>Join our sales team</p>
+                    <p className='flex gap-2 items-center'>Join our sales team <span><ArrowRightOutlined /></span></p>
                 </div>
 
                 <h1 className='text-[45px] font-[600]'>Take your business further with a fast and flexible loan</h1>
