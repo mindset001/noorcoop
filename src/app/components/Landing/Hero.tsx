@@ -12,8 +12,8 @@ function Hero() {
                     <p>Join our sales team</p>
                 </div>
 
-                <h1 className='text-[60px] font-[600]'>Take your business further with a fast and flexible loan</h1>
-                <p className='text-[#475467] text-[20px] font-[400] mt-4'>Borrow from £75,000 to £500,000, with loan terms from 6 months to 5 years at competitive rates.
+                <h1 className='text-[45px] font-[600]'>Take your business further with a fast and flexible loan</h1>
+                <p className='text-[#475467] text-[18px] font-[400] mt-4'>Borrow from £75,000 to £500,000, with loan terms from 6 months to 5 years at competitive rates.
                 You’re always in control, so we don’t charge any additional fees if you want to repay your loan early.</p>
 
                 <div className='flex mt-10 gap-4'>
@@ -21,8 +21,8 @@ function Hero() {
                     <button className='bg-[#4F269F] text-[#fff] py-2 w-[242px] rounded-[8px] h-[60px]'>Apply now</button>
                 </div>
             </div>
-            <div>
-                <Image src={Man} alt='' className='w-full h-[570px]'/>
+            <div className='w-[45%]'>
+                <Image src={Man} alt='' className='w-full h-[540px]'/>
             </div>
         </div>
     </main>
