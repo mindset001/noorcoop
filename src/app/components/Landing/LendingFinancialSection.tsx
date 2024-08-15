@@ -12,7 +12,7 @@ const LendingFinanceSection: React.FC = () => {
         <p className="text-[#475467] mt-6 text-[18px] font-[400]">We finance organizations committed to making a positive impact</p>
       </div>
 
-      <div className="flex justify-between space-x-4 ">
+      <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-0 md:space-x-4 ">
         {/* Card 1 */}
         <div className="bg-white p-6 shadow-md rounded-md flex-1">
           <h3 className="text-xl font-semibold">Business loans up to £1m</h3>

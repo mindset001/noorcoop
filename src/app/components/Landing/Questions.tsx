@@ -5,10 +5,10 @@ function Questions() {
   return (
     <main className='flex flex-col justify-center items-center mt-20'>
         <div className='text-center'>
-            <h1 className='text-[36px] font-[600] text-[#101828]'>Common questions answered</h1>
-            <p className='text-[#475467] text-[20px] font-[400ppx] mt-6'>Everything you need to know about Noorcorp</p>
+            <h1 className='text-[28px] md:text-[36px] font-[600] text-[#101828]'>Common questions answered</h1>
+            <p className='text-[#475467] text-[18px] md:text-[20px] font-[400ppx] mt-6'>Everything you need to know about Noorcorp</p>
         </div>
-        <div className='mt-6 w-[50%] '>
+        <div className='mt-6 w-[90%] md:w-[50%] '>
             <FAQSection/>
         </div>
     </main>

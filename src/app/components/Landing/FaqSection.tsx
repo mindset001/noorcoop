@@ -49,12 +49,12 @@ const FAQSection: React.FC = () => {
             className="faq-question"
             onClick={() => toggleFAQ(index)}
           >
-            <h3 className='text-[#101828] text-[18px] font-[500]'>{item.question}</h3>
+            <h3 className='text-[#101828] text-[16px] md:text-[18px] font-[500]'>{item.question}</h3>
             <span className='border border-[#98A2B3] rounded-full w-[20px] h-[20px] flex justify-center items-center text-[#98A2B3]'>{openIndex === index ? '-' : '+'}</span>
           </div>
           {openIndex === index && (
             <div className="faq-answer">
-              <p className='text-[#475467] text-[16px] font-[400]'>{item.answer}</p>
+              <p className='text-[#475467] text-[14px] md:text-[16px] font-[400]'>{item.answer}</p>
             </div>
           )}
         </div>
