@@ -1,6 +1,8 @@
 import React from 'react'
 import Man from '../../../../public/images/woman.png'
 import Image from 'next/image'
+import { ArrowRightOutlined } from '@ant-design/icons'
+import Link from 'next/link'
 
 function About() {
   return (
@@ -17,10 +19,9 @@ function About() {
 
                 <p className='text-[#475467] text-[18px] font-[400] mt-4'>It takes just minutes to complete your loan application. Once we have reviewed your application and you have accepted the loan terms, the funds could be with you the next working day.</p>
 
-                <div className='flex  flex-col md:flex-row mt-10 gap-4'>
-                    <button className='border border-[#D0D5DD] rounded-[8px] py-2 md:w-[242px] h-[60px]'>Talk to a specialist</button>
-                    <button className='bg-[#4F269F] text-[#fff] py-2 md:w-[242px] rounded-[8px] h-[60px]'>Apply now</button>
-                </div>
+                <Link href='/about' className='flex  flex-col md:flex-row mt-10 gap-4 items-center text-[#4F269F]'>
+                    <p>Learn more <span><ArrowRightOutlined /></span></p>
+                </Link>
             </div>
             <div className='md:w-[45%] flex justify-end mt-6 md:mt-0'>
                 <Image src={Man} alt='' className='md:w-full md:h-[540px]'/>

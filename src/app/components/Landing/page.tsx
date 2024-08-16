@@ -5,6 +5,8 @@ import Questions from './Questions'
 import LendingFinanceSection from './LendingFinancialSection'
 import TestimonialSection from './TestimonialSection'
 import Partners from './Partners'
+import ScrollToTop from './scroll'
+import ContactForm from './ContactForm'
 
 function Landing() {
   return (
@@ -23,7 +25,10 @@ function Landing() {
         <LendingFinanceSection/>
         </div>
        
+       <ContactForm/>
         <Questions/>
+
+        <ScrollToTop/>
       
     </div>
   )
