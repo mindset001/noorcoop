@@ -67,9 +67,9 @@ const Careers = () => {
 
   return (
    <main className='flex flex-col justify-center items-center'>
-     <section className="w-[80%] py-16 bg-gray-50 flex flex-col items-center">
+     <section className="w-[90%] md:w-[80%] py-16 bg-gray-50 flex flex-col items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-green-500 text-sm font-semibold uppercase mb-4">Careers</h2>
+        <h2 className="text-green-500 text-sm font-semibold mb-4">Careers</h2>
         <h1 className="text-4xl font-bold mb-6">We’re looking for talented people</h1>
         <p className="text-lg mb-12 max-w-2xl mx-auto">Untitled is growing fast, and we are always looking for passionate, dynamic, and talented individuals to join our distributed team all around the world.</p>
         <div className="flex justify-center mb-12">
@@ -84,12 +84,12 @@ const Careers = () => {
    
       </div>
 
-      <div className='w-[70%]'>
+      <div className='md:w-[70%]'>
         <h1 className='text-[#101828] text-[20px] font-[500] mb-6'>Design</h1>
       <div className="space-y-12">
           {jobListings.map((job, index) => (
             <div key={index} className="bg-white rounded-lg  p-6 border">
-              <div className='flex gap-2'>
+              <div className='flex flex-col md:flex-row gap-2'>
               <h3 className="text-[18px] font-[500] text-left text-[#101828]">{job.title}</h3>
                 <div className="text-indigo-600 font-semibold bg-[#EFF8FF] rounded-[16px] p-[5px] flex gap-2 items-center">
                     <div className='bg-[#2E90FA] font-[500] rounded-full h-[6px] w-[6px]'></div>
@@ -112,12 +112,12 @@ const Careers = () => {
         </div>
       </div>
 
-      <div className='w-[70%] mt-10'>
+      <div className='md:w-[70%] mt-10'>
         <h1 className='text-[#101828] text-[20px] font-[500] mb-6'>Software Development</h1>
       <div className="space-y-12">
           {jobListings2.map((job, index) => (
             <div key={index} className="bg-white rounded-lg  p-6 border">
-              <div className='flex gap-2'>
+              <div className='flex flex-col md:flex-row  gap-2'>
               <h3 className="text-[18px] font-[500] text-left text-[#101828]">{job.title}</h3>
                 <div className="text-[#C11574] font-semibold bg-[#FDF2FA] rounded-[16px] p-[5px] flex gap-2 items-center">
                     <div className='bg-[#EE46BC] font-[500] rounded-full h-[6px] w-[6px]'></div>
@@ -140,12 +140,12 @@ const Careers = () => {
         </div>
       </div>
 
-      <div className='w-[70%] mt-10'>
+      <div className='md:w-[70%] mt-10'>
         <h1 className='text-[#101828] text-[20px] font-[500] mb-6'>Customer Success</h1>
       <div className="space-y-12">
           {jobListings3.map((job, index) => (
             <div key={index} className="bg-white rounded-lg  p-6 border">
-              <div className='flex gap-2'>
+              <div className='flex flex-col md:flex-row gap-2'>
               <h3 className="text-[18px] font-[500] text-left text-[#101828]">{job.title}</h3>
                 <div className="text-[#027A48] font-semibold bg-[#ECFDF3] rounded-[16px] p-[5px] flex gap-2 items-center">
                     <div className='bg-[#12B76A] font-[500] rounded-full h-[6px] w-[6px]'></div>

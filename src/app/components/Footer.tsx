@@ -17,10 +17,10 @@ function Footer() {
     return (
         <main className='w-full flex flex-col items-start lg:items-center px-4 lg:px-10 bg-[#070112] mt-20 pb-10'>
             <div className='md:w-[80%]  mt-6'>
-                <div className='flex flex-col md:flex-row items-start md:items-center justify-between mt-4'>
+                <div className='flex flex-col md:flex-row items-start md:items-center justify-between'>
                     <Image src={Logo} alt='' className='w-[120px] h-[30px]'/>
                     <div className='mt-6'>
-                        <ul className='grid grid-rows-2 md:grid-cols-4 gap-4 md:gap-10 text-[12px] md:text-[16px] font-[600] text-[white]'>
+                        <ul className='grid grid-rows-2 md:grid-cols-4 gap-4 md:gap-6 text-[12px] md:text-[16px] font-[600] text-[white]'>
                             {Navcontent.map((item, i: number) => (
                                 <li className='hover:underline'><Link href={item.link}>{item.name}</Link></li>
                             ))}

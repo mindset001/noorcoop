@@ -88,7 +88,7 @@ const Team = () => {
   return (
     <main className="flex justify-center">
       <section className="w-[80%] py-10 bg-gray-50 text-center">
-        <h2 className="text-green-500 text-xs font-semibold uppercase mb-4">The Team</h2>
+        <h2 className="text-green-500 text-xs font-semibold  mb-4">The team</h2>
         <h1 className="text-4xl font-bold mb-6">Meet the team behind Noorcorp</h1>
         <p className="text-[18px] font-[400] mb-12 md:w-[70%] mx-auto text-[#475467]">
           We’re a small team that loves to create great experiences and make meaningful connections between builders and customers. Join our remote team!
