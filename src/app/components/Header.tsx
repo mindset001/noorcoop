@@ -67,7 +67,7 @@ function Navbar() {
         
         </div>
 
-              <div className='w-[90%] flex items-center justify-between'>
+              <div className='w-[90%] flex items-center md:hidden justify-between'>
               <div>
           <ScrollLink 
                     to='/'
@@ -84,7 +84,7 @@ function Navbar() {
                {hide &&  <CloseOutlined onClick={handleHide}/>}
                 </div>
               </div>
-      {hide && <div className='block  lg:hidden bg-[#fff] w-full px-4 top-20 pb-10'>
+      {hide && <div className='block lg:hidden bg-[#fff] w-full px-4 top-20 pb-10'>
 
 <div className=''>
       <ul className='flex flex-col gap-3 text-[#000] text-[16px] font-[700]'>
