@@ -104,7 +104,7 @@ const Team = () => {
                 height={400}
               />
               <h3 className="text-xl font-bold mb-2 text-left">{member.name}</h3>
-              <p className="text-[#175CD3] mb-4 text-left text-[16px] font-[400]">{member.title}</p>
+              <p className="text-[#4F269F] mb-4 text-left text-[16px] font-[400]">{member.title}</p>
               <p className="text-[#475467] font-[400] text-[14px] mb-6 text-left">{member.description}</p>
               <div className="flex justify-start space-x-4">
                 <a href="#"><Image src={member.linkedin} alt="LinkedIn" width={24} height={24} /></a>

@@ -41,7 +41,7 @@ function Navbar() {
             <Image src={Logo} alt='Logo' className='w-[143px] h-[50.86px]' />
           </Link>
           <div className='hidden lg:block'>
-            <ul className='flex flex-row gap-3 text-[#000] text-[16px] font-[700]'>
+            <ul className='flex flex-row gap-3 text-[#000] text-[16px] font-[500]'>
               {Navcontent.map((item, i) => (
                 <li className={inter.className} key={i}>
                   {item.type === 'scroll' ? (
@@ -83,7 +83,7 @@ function Navbar() {
 
       {hide && (
         <div className='block lg:hidden bg-[#fff] w-full px-4 top-20 pb-10'>
-          <ul className='flex flex-col gap-3 text-[#000] text-[16px] font-[700]'>
+          <ul className='flex flex-col gap-3 text-[#000] text-[16px] font-[600]'>
             {Navcontent.map((item, i) => (
               <li className={inter.className} key={i}>
                 {item.type === 'scroll' ? (

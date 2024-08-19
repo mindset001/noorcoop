@@ -44,6 +44,38 @@ body {
   color: #666;
 }
 
+.buttonGroup {
+  display: flex;
+  align-items: center;
+}
+
+.leftButton {
+  padding: 10px 20px;
+  background-color: white;
+  color: #333;
+  /* border: 1px solid #ddd; */
+  border-right: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px 0 0 5px;
+}
+
+.rightButton {
+  padding: 10px 20px;
+  background-color: #4F269F; /* Purple color */
+  color: white;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.divider {
+  width: 1px;
+  background-color: #ddd;
+  height: 100%;
+}
+
 
 @layer utilities {
   .text-balance {

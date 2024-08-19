@@ -12,8 +12,9 @@ const TestimonialSection: React.FC = () => {
         <Image src={Woman} alt='efumania' className='rounded-[16px] md:w-[278px] md:h-[278px]'/>
       </div>
      <div className='w-full md:w-[55%]'>
+     <h3 className="text-green-500 font-[600] text-sm">Success Stories</h3>
      <div className="testimonial-content flex-1">
-        <p className=" text-[20px] md:text-[38px] font-[500] mb-4 text-[#101828] mt-6">
+        <p className=" text-[20px] md:text-[38px] font-[500] mb-4 text-[#101828] mt-2">
           I was very impressed with NoorCoop and would shout it from the rooftops.
         </p>
         <p className="text-[#101828] font-[600] text-[18px] mt-6">

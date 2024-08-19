@@ -1,7 +1,8 @@
 // components/LendingFinanceSection.tsx
 import React from 'react';
-import { Button } from 'antd';
-
+import { Button, Divider } from 'antd';
+import Mark from '../../../../public/images/mark.png'
+import Image from 'next/image';
 const LendingFinanceSection: React.FC = () => {
   return (
   <main className='flex justify-center items-center mt-20'>
@@ -17,10 +18,13 @@ const LendingFinanceSection: React.FC = () => {
         <div className="bg-white p-6 shadow-md rounded-md flex-1">
           <h3 className="text-xl font-semibold">Business loans up to £1m</h3>
           <p className=" mb-4 text-[13px] font-[400] text-[#475467]">Be part of the change</p>
+          <div className='my-10'>
+            <Divider/>
+          </div>
           <ul className="mb-6 space-y-2 ">
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Lending from £100k to £1 million</li>
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Your own relationship manager</li>
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Typically up to 70% loan to security value</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Lending from £100k to £1 million</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Your own relationship manager</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Typically up to 70% loan to security value</li>
           </ul>
           <Button type="primary" size="large" className="w-full mb-4 bg-[#4F269F]">Get started</Button>
           <Button type="default" size="large" className="w-full ">Talk to a specialist</Button>
@@ -30,10 +34,13 @@ const LendingFinanceSection: React.FC = () => {
         <div className="bg-white p-6 shadow-md rounded-md flex-1">
           <h3 className="text-xl font-semibold">Business loans over £1m</h3>
           <p className="text-[13px] font-[400] text-[#475467] mb-4">Building a positive future</p>
+          <div className='my-10'>
+            <Divider/>
+          </div>
           <ul className="mb-6 space-y-2">
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Loans from £1 million to £20 million</li>
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Our own relationship manager</li>
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Typically up to 70% loan to security value</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Loans from £1 million to £20 million</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Our own relationship manager</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Typically up to 70% loan to security value</li>
           </ul>
           <Button type="primary" size="large" className="w-full mb-4 bg-[#4F269F]">Get started</Button>
           <Button type="default" size="large" className="w-full">Talk to a specialist</Button>
@@ -43,10 +50,13 @@ const LendingFinanceSection: React.FC = () => {
         <div className="bg-white p-6 shadow-md rounded-md flex-1">
           <h3 className="text-xl font-semibold">Get money from investors.</h3>
           <p className="text-[13px] font-[400] text-[#475467] mb-4">Investment to help your organization grow</p>
+          <div className='my-10'>
+            <Divider/>
+          </div>
           <ul className="mb-6 space-y-2">
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Capital raising from £250k to £10m</li>
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Access to a wide range of investors</li>
-            <li className='text-[13px] font-[400] text-[#475467]'>✔️ Unsecured debt, bond and share offers</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Capital raising from £250k to £10m</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Access to a wide range of investors</li>
+            <li className='text-[13px] font-[400] text-[#475467] flex items-center gap-[4px]'><Image src={Mark} alt='' className='w-[12px] h-[12px]'/> Unsecured debt, bond and share offers</li>
           </ul>
           <Button type="primary" size="large" className="w-full mb-4 bg-[#4F269F]">Get started</Button>
           <Button type="default" size="large" className="w-full">Talk to a specialist</Button>

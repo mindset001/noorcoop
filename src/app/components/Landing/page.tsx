@@ -7,6 +7,7 @@ import TestimonialSection from './TestimonialSection'
 import Partners from './Partners'
 import ScrollToTop from './scroll'
 import ContactForm from './ContactForm'
+import ButtonComponent from './ButtonComponents'
 
 function Landing() {
   return (
@@ -27,7 +28,7 @@ function Landing() {
        
        <ContactForm/>
         <Questions/>
-
+<ButtonComponent/>
         <ScrollToTop/>
       
     </div>

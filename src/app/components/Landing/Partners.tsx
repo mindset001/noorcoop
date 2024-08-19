@@ -11,7 +11,7 @@ const Partners = () => {
   return (
     <main className='mt-10 flex justify-center'>
         <div className="w-[80%] flex flex-col items-center my-10">
-      <h3 className="text-green-500 text-sm">Our Partners</h3>
+      <h3 className="text-green-500 font-[700] text-sm">Our Partners</h3>
       <div className="flex justify-between w-full mt-10">
         <Image src={Bolt} alt="Boltshift" width={100} height={100} className="object-contain" />
         <Image src={Light} alt="Lightbox" width={100} height={100} className="object-contain" />

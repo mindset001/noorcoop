@@ -20,7 +20,7 @@ function Footer() {
                 <div className='flex flex-col md:flex-col items-start md:items-center justify-between'>
                     <Image src={Logo} alt='' className='w-[120px] h-[30px]'/>
                     <div className='mt-6'>
-                        <ul className='grid grid-rows-2 md:grid-cols-4 gap-4 md:gap-4 text-[12px] md:text-[16px] font-[600] text-[white]'>
+                        <ul className='grid grid-rows-2 md:grid-cols-5 space-x-[5px] text-[12px] md:text-[16px] font-[600] text-[white]'>
                             {Navcontent.map((item, i: number) => (
                                 <li className='hover:underline'><Link href={item.link}>{item.name}</Link></li>
                             ))}
@@ -87,6 +87,10 @@ const Navcontent = [
     {
         link: '',
         name: 'Help'
+    },
+    {
+        link: '',
+        name: 'Careers'
     },
 
     {
